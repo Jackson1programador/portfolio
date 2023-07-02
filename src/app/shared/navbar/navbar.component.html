@@ -1,0 +1,45 @@
+<div class="navbar-container ">
+
+  <div class="icone-container">
+    <a class="icone navbar-text" routerLink="" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+
+    </a>
+  </div>
+
+  <div class="lista-link">
+    <ul>
+      <li class="navbar-li"> <a class="navbar-text" routerLink="/sobre" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Sobre</a> </li>
+      <li class="navbar-li"> <a class="navbar-text" routerLink="/habilidade" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Habilidades</a> </li>
+      <li class="navbar-li"> <a class="navbar-text" routerLink="/projetos" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Projetos</a> </li>
+      <li class="navbar-li"> <a class="navbar-text" routerLink="/experiencias" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Experiencias</a> </li>
+      <li class="navbar-li" > <a class="btn" routerLink="/resumo" [routerLinkActive]="['ativa-btn']" [routerLinkActiveOptions]="{exact: true}">Resumo</a> </li>
+    </ul>
+  </div>
+
+  <div class="icone-menu-container">
+      <div class="container-menu">
+         <i  class="icone-menu icone navbar-text" (click)="menuOnOff()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+        </i>
+      </div>
+
+      <div class="container-list slideInLeft" [ngClass]="{'menu-inativo': menu, 'menu-ativo': !menu }">
+        <i  class="icone-menu-ativo icone navbar-text" (click)="menuOnOff()">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+        </i>
+        <ul>
+          <li class="navbar-li-menu" > <a class="navbar-text-menu" routerLink="/sobre" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Sobre</a> </li>
+          <li class="navbar-li-menu"> <a class="navbar-text-menu" routerLink="/habilidade" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Habilidades</a> </li>
+          <li class="navbar-li-menu"> <a class="navbar-text-menu" routerLink="/projetos" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Projetos</a> </li>
+          <li class="navbar-li-menu"> <a class="navbar-text-menu" routerLink="/experiencias" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Experiencias</a> </li>
+          <li class="navbar-li-menu" > <a class="navbar-text-menu" routerLink="/resumo" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Resumo</a> </li>
+        </ul>
+      </div>
+
+  </div>
+
+
+</div>
+
+

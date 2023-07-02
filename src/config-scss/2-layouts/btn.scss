@@ -1,0 +1,16 @@
+
+
+.btn-transparente{
+  background: transparent;
+  border: solid 1px;
+  border-color: $text-color;
+  padding: 0.3rem 1.5rem;
+  color: $text-color;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.btn-transparente:hover{
+  transition: 0.03;
+  border-color: $roso;
+  color: $roso;
+}

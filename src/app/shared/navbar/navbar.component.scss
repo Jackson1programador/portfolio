@@ -1,0 +1,173 @@
+@import "/src/config-scss/app.scss";
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: $gradient;
+  font-weight: 600;
+  position: relative;
+}
+
+.icone-container{
+  display: flex;
+  align-items: center;
+
+  @include smartphone{
+    display: none;
+  }
+
+  @include tablet{
+    display: none;
+  }
+}
+
+.lista-link{
+  @include smartphone{
+    display: none;
+  }
+
+  @include tablet{
+    display: none;
+  }
+}
+
+.icone{
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.icone:hover{
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.navbar-li{
+  display: inline-flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+.navbar-text{
+  color: $text-color-navbar;
+}
+.navbar-text:hover{
+  color: $text-color;
+  transition: 0.3s;
+  font-size: 1.3rem;
+}
+
+.ativa{
+  color: $text-color;
+  font-size: 1.3rem;
+}
+
+.btn{
+  border: 2px solid;
+  padding: 0.7rem 1.5rem;
+  border-color: $text-color-navbar;
+  color: $text-color-navbar;
+}
+.btn:hover{
+  background: $text-color-navbar;
+  padding: 0.8rem 1.6rem;
+  transition: 0.3s;
+  border-color: $text-color;
+  color: $text-color;
+  font-size: 1.3rem;
+}
+
+.ativa-btn{
+  background: $text-color-navbar;
+  padding: 0.8rem 1.6rem;
+  border-color: $text-color;
+  color: $text-color;
+  font-size: 1.3rem;
+}
+
+//menu smartfone e tablete
+.icone-menu-container{
+  display: none;
+  width: 100%;
+
+  @include smartphone{
+    display: block;
+  }
+  @include tablet{
+    display: block;
+  }
+}
+
+.container-list{
+  background: $text-color-navbar;
+  margin-left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 16px;
+}
+
+.menu-inativo{
+  display: none;
+}
+
+.menu-ativo{
+  display: inline-block;
+}
+
+.navbar-text-menu{
+  color: rgba(221,36,118,1);
+  margin-left: 16px;
+}
+
+.navbar-text-menu:hover{
+  color: $text-color;
+  transition: 0.3s;
+  font-size: 1.3rem;
+}
+
+.icone-menu-ativo {
+  color: rgba(221,36,118,1);
+}
+
+.icone-menu {
+  color: $text-color-navbar;
+}
+
+.navbar-li-menu{
+  margin-top: 2rem;
+}
+
+//Efeito do menu ativando
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
