@@ -1,0 +1,90 @@
+@import "../../../config-scss/app.scss";
+
+.container-footer{
+  justify-content: space-between;
+  display: flex;
+  color: $text-color;
+  background-color: rgba(0,0,0,0.8);
+
+}
+
+.container-logo {
+  padding-left: 3rem;
+  padding-top: 2rem;
+  width: 33%;
+
+}
+
+.container-links{
+  justify-content: space-between;
+  display: flex;
+  width: 34%;
+  padding-top: 2rem;
+
+}
+
+.link{
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: $text-color
+}
+.link:hover{
+  transition: 0.3s;
+  font-size: 1.1rem;
+  color: $roso;
+}
+
+.container-rede-sociais{
+  width: 33%;
+  padding-top: 2rem;
+
+}
+
+.container-icon{
+  justify-content: center;
+  display: flex;
+
+}
+
+.img-rede-sociais{
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.img-rede-sociais:hover{
+  transition: 0.3s;
+  width: 2.2rem;
+  height: 2.2em;
+  opacity: 1;
+}
+
+.container-btn{
+  justify-content: center;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.btn-footer{
+  padding: 0.4rem 2rem;
+  background-color: $roso-transparente;
+  color: $text-color;
+  border-radius: 15rem;
+  border: solid 0px;
+  cursor: pointer;
+
+}
+.btn-footer:hover{
+  transition: 0.3s;
+  background-color: $roso;
+}
+
+.copy{
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  color: $text-color;
+  background-color: rgba(0,0,0,0.9);
+}

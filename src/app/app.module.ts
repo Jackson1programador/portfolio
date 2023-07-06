@@ -14,6 +14,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,16 @@ import {MatIconModule} from '@angular/material/icon';
     ResumoComponent,
     SobreComponent,
     NavbarComponent,
-    HabilidadesComponent
+    HabilidadesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
