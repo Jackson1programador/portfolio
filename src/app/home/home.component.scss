@@ -1,13 +1,13 @@
 @import "/src/config-scss/app.scss";
 
+.container{
+  background: $bg-color;
+}
+
 .container-home{
   background-color: $bg-color;
   height: 90vh;
   display: flex;
-  background-image: url("../../assets/img/img-home-04.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //object-fit: cover;
   width: 100%;
   height: 59vh;
 
@@ -90,10 +90,7 @@
 .container-icon{
   width: 100%;
   height: 30vh;
-  background-image: url("../../assets/img/img-home-04.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //object-fit: cover;
+ // background-image: url("../../assets/img/img-home-04.jpg");
 }
 
 
@@ -108,6 +105,17 @@
   display: flex;
   border: solid 0.1rem $text-color;
 }
+.li-icon:hover{
+  transition: 0,3s;
+  width: 7rem;
+  height: 7rem;
+}
+
+
+
+
+
+
 
 .img-habilidades{
   width: 80%;
