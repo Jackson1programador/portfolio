@@ -1,6 +1,280 @@
 @import "/src/config-scss/app.scss";
 
-.sobre {
-background-color: $body-bg-color;
-height: 500px;
+app-navbar{
+  margin-bottom: 0  ;
+}
+body {
+background-color: $bg-color;
+margin-top: 0;
+}
+.apoio{
+  height: 2rem;
+}
+
+.card{
+  margin: 0 10%;
+  box-shadow: 0rem 0rem 5rem $roso;
+  margin-bottom: 5rem;
+  background: $bg-color-container-card;
+}
+
+.card__container-img{
+  height: 40vh;
+  background-color:  rgba(221,36,118,0.7);
+  width: 100%;
+
+
+}
+
+.card__container-img h1{
+  color: $text-color;
+  font-size: 4rem;
+  padding-top: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+.card__container-img__bg{
+  width: 100%;
+  height: 100%;
+  //background-image: url(../../assets/img/sobre-03.jpg);
+  //background-repeat: no-repeat;
+  //background-size: 100%;
+  //background-position: top;
+  //background-attachment: fixed;
+  opacity: 1;
+}
+
+.card__container-content{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card__container-content img{
+  width: 33%;
+  height: 33%;
+  border-radius: 50%;
+  box-shadow: 0 0 5rem $roso;
+  margin: -10rem auto 0;
+  z-index: 1;
+  opacity: 1;
+}
+
+.container-informacao{
+  margin: 3rem 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.card__container-content__infomacao{
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.card__container-content__infomacao h1{
+  font-size: 1.8rem;
+  width: 95%;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 0.4rem $roso;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  color: $roso;
+  letter-spacing: 2px;
+
+}
+
+.card__container-content__infomacao p{
+  margin-top: 1rem;
+  color: $text-color;
+  text-align: justify;
+}
+
+
+
+
+.container-contato{
+  margin: 3rem 8%;
+  background-color: $bg-color;
+
+}
+
+.container-contato h1{
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  color: $text-color;
+  text-shadow: 2px 2px 2px $roso;
+
+}
+
+.container-contato p{
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: $text-color;
+}
+
+
+
+
+.container-contato__card{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.formulario{
+  height: 70vh;
+  width: 40%;
+  background-color: black;
+  box-shadow: 0 0 5rem $roso;
+  color: $text-color;
+  text-align: left;
+  padding: 1rem;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.formulario h1{
+  font-size: 1.8rem;
+  text-align: left;
+  padding-left: 0;
+  flex-grow: 0;
+
+
+}
+
+.formulario p{
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 0;
+  flex-grow: 0;
+
+}
+
+form{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+}
+
+label{
+  display: inline-block;
+  flex-grow: 0;
+
+}
+
+input{
+  width: auto;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  border-radius: 5px;
+  border: solid 0;
+  background-color: #cccccc;
+  opacity: 0.8;
+
+}
+input:hover{
+  transition: 0.3;
+  opacity: 1;
+}
+textarea{
+  width: auto;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  border-radius: 5px;
+  border: solid 0;
+  background-color: #cccccc;
+  opacity: 0.8;
+  flex-grow: 1;
+}
+textarea:hover{
+  transition: 0.3;
+  opacity: 1;
+}
+
+
+
+button{
+  display: inline-block;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  background-color: $roso;
+  font-weight:900;
+  opacity: 0.8;
+}
+button:hover{
+  transition: 0.3s;
+  opacity: 1;
+
+}
+
+.contato-card{
+  height: 70vh;
+  width: 60%;
+  background-color: black;
+  box-shadow: 0 0 5rem $roso;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contato-card__card{
+  width: 45%;
+  height: 45%;
+  background-color: $roso;
+  opacity: 0.8;
+}
+.contato-card__card:hover{
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.contato-card__card__container-img{
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+
+.contato-card__card__container-img img{
+  width: 70%;
+  height: 70%;
+  margin: auto ;
+
+
+
+}
+
+.contato-card__card h1{
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+.contato-card__card__titulo{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  background-color: #000000bb;
+
+
+}
+#icon-email{
+  font-size: 0.8rem;
+}
+
+#google-map{
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
 }
