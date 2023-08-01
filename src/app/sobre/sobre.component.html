@@ -49,13 +49,13 @@
             <form action="">
 
               <label for="nome">Nome</label>
-              <input type="text" id="nome">
+              <input type="text" id="nome" required minlength="2" placeholder="Digite seu nome">
 
               <label for="email">E-mail</label>
-              <input type="email" id="email">
+              <input type="email" id="email" required placeholder="Digite seu e-mail">
 
               <label for="mensagem">Assunto</label>
-              <textarea name="mensagem" id="mensagem" cols="30" rows="7"></textarea>
+              <textarea name="mensagem" id="mensagem" cols="30" rows="7" required minlength="10" placeholder="O que deseja?"></textarea>
               <button>Enviar</button>
 
 
@@ -91,7 +91,7 @@
 
             <div class="contato-card__card">
               <div class="contato-card__card__container-img">
-                <img src="../../assets/img/email-01.png.crdownload" alt="e-mail">
+                <img src="../../assets/img/email.png.crdownload" alt="e-mail">
               </div>
              <div class="contato-card__card__titulo">
                <h1 id="icon-email">jackson1contador@gmail.com</h1>

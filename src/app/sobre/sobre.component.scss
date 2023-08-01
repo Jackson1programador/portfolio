@@ -181,12 +181,17 @@ input{
   border: solid 0;
   background-color: #cccccc;
   opacity: 0.8;
+  outline: none;
 
 }
 input:hover{
   transition: 0.3;
   opacity: 1;
 }
+input:invalid{
+  color: red;
+}
+
 textarea{
   width: auto;
   margin-bottom: 1.5rem;
@@ -196,10 +201,14 @@ textarea{
   background-color: #cccccc;
   opacity: 0.8;
   flex-grow: 1;
+  outline: none;
 }
 textarea:hover{
   transition: 0.3;
   opacity: 1;
+}
+textarea:invalid{
+  color: red;
 }
 
 

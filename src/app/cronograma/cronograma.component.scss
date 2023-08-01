@@ -1,0 +1,108 @@
+@import "/src/config-scss/app.scss";
+
+body{
+  background-color: $bg-color;
+
+}
+.title{
+  color: $text-color;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+
+}
+
+.container-cronograma{
+  width: 80%;
+  height: 70vh;
+  min-width: 800px;
+  background-color: $bg-color-container-card;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  overflow: auto;
+
+
+}
+
+.card-cronograma{
+  display: flex;
+
+}
+
+.container-data{
+  background-color: aquamarine;
+  width: 200px;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.alinhamento{
+  text-align: right;
+}
+
+.ano{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.mes{
+  font-weight: 900;
+}
+
+.container-ico{
+  background-color: $roso;
+  width: 150px;
+  height: 25vh;
+  background-image: url(../../assets/img/traco-vertical.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.icon{
+  width: 75px;
+  height: 75px;
+  border-radius: 5rem;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icon img{
+  width: 70%;
+
+}
+
+.container-content{
+  background-color: red;
+  width: 300px;
+  height: 25vh;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column  ;
+
+}
+
+.container-content p{
+  padding: 1rem;
+  line-height: 1.3rem;
+
+}
+
+.title-content{
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
