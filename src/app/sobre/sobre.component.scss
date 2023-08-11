@@ -13,25 +13,28 @@ margin-top: 0;
 
 .card{
   margin: 0 10%;
-  box-shadow: 0rem 0rem 5rem $roso;
+  box-shadow: 0rem 0rem 2rem rgba(47, 3, 28, 0.822);
   margin-bottom: 5rem;
   background: $bg-color-container-card;
 }
 
 .card__container-img{
   height: 40vh;
-  background-color:  rgba(221,36,118,0.7);
+  background-color:  rgba(0, 0, 0, 0.116);
   width: 100%;
+
 
 
 }
 
 .card__container-img h1{
   color: $text-color;
-  font-size: 4rem;
+  font-size: 3rem;
   padding-top: 1rem;
   text-align: center;
   text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+
 }
 
 .card__container-img__bg{
@@ -56,10 +59,12 @@ margin-top: 0;
   width: 33%;
   height: 33%;
   border-radius: 50%;
-  box-shadow: 0 0 5rem $roso;
+  box-shadow: 0 0 2rem rgba(47, 3, 28, 0.822);
   margin: -10rem auto 0;
   z-index: 1;
   opacity: 1;
+
+
 }
 
 .container-informacao{
@@ -79,11 +84,13 @@ margin-top: 0;
   font-size: 1.8rem;
   width: 95%;
   padding-bottom: 0.5rem;
-  border-bottom: solid 0.4rem $roso;
+  border-bottom: solid 0.4rem rgba(47, 3, 28, 0.822);
   border-radius: 1rem;
   padding-left: 1rem;
-  color: $roso;
+  color: $text-color;
   letter-spacing: 2px;
+  text-shadow: 4px 4px black;
+  text-transform: uppercase;
 
 }
 
@@ -91,6 +98,7 @@ margin-top: 0;
   margin-top: 1rem;
   color: $text-color;
   text-align: justify;
+  line-height: 1.5rem;
 }
 
 
@@ -98,16 +106,19 @@ margin-top: 0;
 
 .container-contato{
   margin: 3rem 8%;
-  background-color: $bg-color;
+  //background-color: $bg-color;
 
 }
 
 .container-contato h1{
   text-align: center;
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: $text-color;
-  text-shadow: 2px 2px 2px $roso;
+  text-shadow: 4px 4px black;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
 
 }
 
@@ -131,14 +142,14 @@ margin-top: 0;
   height: 70vh;
   width: 40%;
   background-color: black;
-  box-shadow: 0 0 5rem $roso;
+  box-shadow: 0 0 2rem rgba(47, 3, 28, 0.822);
   color: $text-color;
   text-align: left;
   padding: 1rem;
   justify-content: space-around;
   display: flex;
   flex-direction: column;
-
+  border-radius: 1rem;
 
 }
 
@@ -188,8 +199,11 @@ input:hover{
   transition: 0.3;
   opacity: 1;
 }
-input:invalid{
-  color: red;
+input:invalid:focus{
+  border-bottom: 3px solid red;
+}
+input:valid:focus{
+  border-bottom: 3px solid rgb(8, 229, 8) ;
 }
 
 textarea{
@@ -198,7 +212,7 @@ textarea{
   padding: 0.5rem 0 0.5rem 0.5rem;
   border-radius: 5px;
   border: solid 0;
-  background-color: #cccccc;
+  background-color: white;
   opacity: 0.8;
   flex-grow: 1;
   outline: none;
@@ -207,8 +221,11 @@ textarea:hover{
   transition: 0.3;
   opacity: 1;
 }
-textarea:invalid{
-  color: red;
+textarea:invalid:focus{
+  border-bottom: 3px solid red;
+}
+textarea:valid:focus{
+  border-bottom: 3px solid rgb(8, 229, 8);
 }
 
 
@@ -221,6 +238,11 @@ button{
   background-color: $roso;
   font-weight:900;
   opacity: 0.8;
+  outline: none;
+  color: $text-color;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
 }
 button:hover{
   transition: 0.3s;
@@ -232,18 +254,21 @@ button:hover{
   height: 70vh;
   width: 60%;
   background-color: black;
-  box-shadow: 0 0 5rem $roso;
+  box-shadow: 0 0 2rem rgba(47, 3, 28, 0.822);
   padding: 1rem;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: space-around;
+  border-radius: 1rem;
 }
 .contato-card__card{
   width: 45%;
   height: 45%;
-  background-color: $roso;
+  background-color: white;
   opacity: 0.8;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 .contato-card__card:hover{
   transition: 0.3s;

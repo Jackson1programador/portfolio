@@ -34,6 +34,7 @@ body{
   padding: 2rem;
   border-radius: 1rem;
 
+
 }
 
 .title-projeto{
@@ -53,6 +54,8 @@ body{
   width: 30%;
   min-width: 300px;
   background-color: $text-color;
+  position: relative;
+  overflow: hidden;
 }
 
 .img{
@@ -97,4 +100,25 @@ body{
 .btn:hover{
   transition: 0.3s;
   opacity: 1;
+}
+
+.container-tarja{
+  position: absolute;
+  top: 13.5rem;
+  left: -2rem;
+  z-index: 1;
+  background-color: rgba(221,36,118, 0.7);
+  transform: rotate(-45deg);
+  transform-origin: left;
+
+}
+
+.content-tarja{
+  font-size: 2.5rem;
+  width: 23rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.5rem;
+  text-align: center;
+
 }

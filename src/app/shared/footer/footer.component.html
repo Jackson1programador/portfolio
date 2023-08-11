@@ -12,15 +12,15 @@
 
   <div class="container-links">
     <ul class="navegacao">
-      <li><a href="#" class="link">Home</a></li>
-      <li><a href="#" class="link">Habilidades</a></li>
-      <li><a href="#" class="link">Projetos</a></li>
+      <li><a routerLink="" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="link">Home</a></li>
+      <li><a routerLink="/habilidade" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="link">Habilidades</a></li>
+      <li><a routerLink="/projetos" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="link">Projetos</a></li>
     </ul>
 
     <ul class="sobre">
-      <li><a href="#" class="link">Sobre</a></li>
-      <li><a href="#" class="link">Experiencias</a></li>
-      <li><a href="#" class="link">Resumo</a></li>
+      <li><a routerLink="/sobre" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="link">Sobre</a></li>
+      <li><a routerLink="/cronograma" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="link">Cronograma</a></li>
+      <li><a href="/sobre/#contato" class="link">Contato</a></li>
     </ul>
 
 
@@ -30,9 +30,9 @@
   <div class="container-rede-sociais">
 
     <div class="container-icon">
-      <img src="../../../assets/img/linkedin-02.png" alt="Linkedin" class="img-rede-sociais">
-      <img src="../../../assets/img/git-03.png" alt="Guit" class="img-rede-sociais">
-      <img src="../../../assets/img/instagram-02.png" alt="Instagran" class="img-rede-sociais">
+      <a target="_blank" href="https://www.linkedin.com/in/jackson-albuquerque-de-andrade-55467a21a/"><img src="../../../assets/img/linkedin-02.png" alt="Linkedin" class="img-rede-sociais"></a>
+      <a target="_blank" href="https://github.com/Jackson1programador" ><img src="../../../assets/img/git-03.png" alt="Guit" class="img-rede-sociais"></a>
+      <a target="_blank" href="https://instagram.com/jackson_albuquerque92?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="../../../assets/img/instagram-02.png" alt="Instagran" class="img-rede-sociais"></a>
 
     </div>
 
@@ -49,5 +49,5 @@
 </div>
 
 <div class="copyright">
-  <p class="copy">&copy; 2022 Copyright - Desesenvolvedor Jackson</p>
+  <p class="copy">&copy; 2023 Copyright - Desesenvolvedor Jackson</p>
 </div>

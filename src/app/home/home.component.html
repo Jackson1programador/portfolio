@@ -10,8 +10,8 @@
          <h2 class="nome efeito-text slideInLeft">{{nomeTela}}</h2>
          <h1 class="sobreNome efeito-text slideInLeft">{{sobrenomeTela}}</h1>
          <h3 class="funcao efeito-text slideInLeft">{{funcaoTela}}</h3>
-         <button class="btn-transparente" id="btn-home">Resumo</button>
-         <button class="btn-transparente" id="btn-home">Portfolio</button>
+         <a routerLink="/projetos" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="btn-transparente" id="btn-home">Projeto</a>
+         <a routerLink="/cronograma" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="btn-transparente" id="btn-home">Cronograma</a>
        </div>
      </div>
 
