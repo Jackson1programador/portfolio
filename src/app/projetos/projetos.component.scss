@@ -17,13 +17,11 @@ body{
   min-width: 800px;
   padding: 3rem;
   margin: auto;
-  opacity: 0.6;
+
+
 
 }
-.container:hover{
-  transition: 0.3s;
-  opacity: 1;
-}
+
 
 .container-projeto{
   margin: 2rem;
@@ -33,8 +31,15 @@ body{
   flex-direction: column;
   padding: 2rem;
   border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(47, 3, 28, 0.822);
+  opacity: 0.6;
 
 
+}
+
+.container-projeto:hover{
+  transition: 0.3s;
+  opacity: 1;
 }
 
 .title-projeto{
@@ -68,7 +73,8 @@ body{
   font-size: 1.6rem;
   width: 40%;
   min-width: 400px;
-  border-bottom: 0.4rem solid $text-color;
+  border-bottom: 0.4rem solid rgba(47, 3, 28, 0.822);
+
   border-radius: 5rem;
   padding-left: 1rem;
   padding-bottom: 0.2rem;

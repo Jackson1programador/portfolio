@@ -23,6 +23,7 @@ body{
   overflow: auto;
 
 
+
 }
 
 .card-cronograma{
@@ -38,6 +39,8 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  border-bottom: 2px dotted rgba(47, 3, 28, 0.822);
 
 }
 .alinhamento{
@@ -64,6 +67,8 @@ body{
   justify-content: center;
   align-items: center;
 
+  border-bottom: 2px dotted rgba(47, 3, 28, 0.822);
+
 
 }
 .icon{
@@ -83,7 +88,7 @@ body{
 }
 
 .container-content{
-  background-color: red;
+  background-color: #cccccc;
   width: 300px;
   height: 25vh;
   flex-grow: 1;
@@ -91,6 +96,8 @@ body{
   justify-content: center;
   align-items: flex-start;
   flex-direction: column  ;
+
+  border-bottom: 2px dotted rgba(47, 3, 28, 0.822);
 
 }
 

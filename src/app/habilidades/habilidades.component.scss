@@ -2,7 +2,7 @@
 
 .container-habilidades{
   background-color: $bg-color;
-  color: $roso;
+  color: $text-color;
 }
 
 .container-barra-navegacao{
@@ -19,6 +19,8 @@
   background-color: $bg-color-container-card;
   display: flex;
   margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(47, 3, 28, 0.822);
 }
 
 .descricao{
