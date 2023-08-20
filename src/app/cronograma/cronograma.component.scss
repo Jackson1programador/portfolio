@@ -21,9 +21,6 @@ body{
   margin: 2rem auto;
   border-radius: 2rem;
   overflow: auto;
-
-
-
 }
 
 .card-cronograma{
@@ -41,8 +38,12 @@ body{
   flex-direction: column;
 
   border-bottom: 2px dotted rgba(47, 3, 28, 0.822);
-
 }
+
+
+
+
+
 .alinhamento{
   text-align: right;
 }
@@ -112,4 +113,13 @@ body{
   padding-top: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+
+
+
+.card-cronograma:last-of-type .container-data,
+.card-cronograma:last-of-type .container-ico,
+.card-cronograma:last-of-type .container-content {
+  border-bottom: none;
 }
