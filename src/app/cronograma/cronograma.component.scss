@@ -29,7 +29,7 @@ body{
 }
 
 .container-data{
-  background-color: aquamarine;
+  background-color: $roso;
   width: 200px;
   height: 25vh;
   display: flex;
@@ -58,7 +58,7 @@ body{
 }
 
 .container-ico{
-  background-color: $roso;
+  background-color: $border-card;
   width: 150px;
   height: 25vh;
   background-image: url(../../assets/img/traco-vertical.png);

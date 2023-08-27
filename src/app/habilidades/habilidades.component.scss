@@ -20,7 +20,7 @@
   display: flex;
   margin-bottom: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 2rem rgba(47, 3, 28, 0.822);
+  box-shadow: 0 0 2rem $border-card;
 }
 
 .descricao{
@@ -42,7 +42,7 @@
 .card{
   width: 15%;
   height: 42%;
-  background-color: rgb(198, 69, 233);
+  background-color: $bg-color-card-habilidade;
   border-radius: 1rem;
   margin: 1rem 1.7rem;
   opacity: 0.9;

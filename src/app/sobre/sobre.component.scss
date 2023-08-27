@@ -13,7 +13,7 @@ margin-top: 0;
 
 .card{
   margin: 0 10%;
-  box-shadow: 0rem 0rem 2rem rgba(47, 3, 28, 0.822);
+  box-shadow: 0rem 0rem 2rem $border-card;
   margin-bottom: 5rem;
   background: $bg-color-container-card;
 }
@@ -56,13 +56,14 @@ margin-top: 0;
 }
 
 .card__container-content img{
-  width: 33%;
-  height: 33%;
+  width: 20em;
+  height: 20em;
   border-radius: 50%;
-  box-shadow: 0 0 2rem rgba(47, 3, 28, 0.822);
+  box-shadow: 0 0 2rem $border-card;
   margin: -10rem auto 0;
   z-index: 1;
   opacity: 1;
+  background-size: cover;
 
 
 }
@@ -84,7 +85,7 @@ margin-top: 0;
   font-size: 1.8rem;
   width: 95%;
   padding-bottom: 0.5rem;
-  border-bottom: solid 0.4rem rgba(47, 3, 28, 0.822);
+  border-bottom: solid 0.4rem $border-card;
   border-radius: 1rem;
   padding-left: 1rem;
   color: $text-color;
@@ -142,7 +143,7 @@ margin-top: 0;
   height: 70vh;
   width: 40%;
   background-color: black;
-  box-shadow: 0 0 2rem rgba(47, 3, 28, 0.822);
+  box-shadow: 0 0 2rem $border-card;
   color: $text-color;
   text-align: left;
   padding: 1rem;
@@ -263,7 +264,7 @@ button:hover{
   height: 70vh;
   width: 60%;
   background-color: black;
-  box-shadow: 0 0 2rem rgba(47, 3, 28, 0.822);
+  box-shadow: 0 0 2rem $border-card;
   padding: 1rem;
   display: flex;
   gap: 1rem;
