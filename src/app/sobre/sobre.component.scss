@@ -185,6 +185,8 @@ form{
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  min-width: 200px;
+  min-height: 300px;
 
 }
 
@@ -271,6 +273,8 @@ button:hover{
   flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 1rem;
+  min-width: 350px;
+  min-height: 350px;
 }
 .contato-card__card{
   width: 45%;

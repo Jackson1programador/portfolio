@@ -14,13 +14,15 @@
 //front end
 
 .container-frontEnd{
-  height: 73vh;
+  min-height: 73vh;
   margin: 0 4rem;
   background-color: $bg-color-container-card;
   display: flex;
   margin-bottom: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 2rem $border-card;
+
+
 }
 
 .descricao{
@@ -37,11 +39,17 @@
   flex-wrap: wrap;
   margin-left: 2rem;
   margin-top: 1rem;
+
+
+  @include smartphone{
+    justify-content: center;
+  }
+
 }
 
 .card{
-  width: 15%;
-  height: 42%;
+  width: 175px;
+  height: 200px;
   background-color: $bg-color-card-habilidade;
   border-radius: 1rem;
   margin: 1rem 1.7rem;
