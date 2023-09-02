@@ -5,15 +5,16 @@
   <div class="container-home">
 
     <div class="container-apresentacao">
-
        <div class="container-informacao">
          <h2 class="nome efeito-text slideInLeft">{{nomeTela}}</h2>
          <h1 class="sobreNome efeito-text slideInLeft">{{sobrenomeTela}}</h1>
          <h3 class="funcao efeito-text slideInLeft">{{funcaoTela}}</h3>
-         <a routerLink="/projetos" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="btn-transparente" id="btn-home">Projeto</a>
-         <a routerLink="/cronograma" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="btn-transparente" id="btn-home">Cronograma</a>
+         <div class="container-btn-apresentacao">
+           <a routerLink="/projetos" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="btn-transparente" id="btn-home">Projeto</a>
+           <a routerLink="/cronograma" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}" class="btn-transparente" id="btn-home">Cronograma</a>
+         </div>
        </div>
-     </div>
+   </div>
 
      <div class="container-foto">
        <div class="container-interno-foto">
@@ -21,7 +22,6 @@
          <!-- <img src="../assets/img/foto individual-03.jpg" alt="foto do programador" class="foto"> -->
        </div>
      </div>
-
   </div>
 
   <div class="container-icon">

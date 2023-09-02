@@ -1,5 +1,5 @@
 $tablet-with: 700px;
-$smartphone-with: 450;
+$smartphone-with: 450px;
 
 @mixin tablet {
   @media (max-width: #{$tablet-with}){
