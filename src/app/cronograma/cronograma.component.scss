@@ -38,6 +38,7 @@ body{
   flex-direction: column;
 
   border-bottom: 2px dotted rgba(47, 3, 28, 0.822);
+  min-height: 174px;
 }
 
 
@@ -69,7 +70,7 @@ body{
   align-items: center;
 
   border-bottom: 2px dotted rgba(47, 3, 28, 0.822);
-
+  min-height: 174px;
 
 }
 .icon{
@@ -99,7 +100,16 @@ body{
   flex-direction: column  ;
 
   border-bottom: 2px dotted rgba(47, 3, 28, 0.822);
+  min-height: 174px;
+  position: relative;
 
+}
+
+.carimbo-concluido{
+  width: 15rem;
+  position: absolute;
+  right: 1rem;
+  opacity: 0.5;
 }
 
 .container-content p{
