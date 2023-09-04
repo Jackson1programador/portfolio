@@ -4,8 +4,16 @@ app-navbar{
   margin-bottom: 0  ;
 }
 body {
-background-color: $bg-color;
-margin-top: 0;
+  background-color: $bg-color;
+  margin-top: 0;
+
+  @include smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
 }
 .apoio{
   height: 2rem;
@@ -16,12 +24,23 @@ margin-top: 0;
   box-shadow: 0rem 0rem 2rem $border-card;
   margin-bottom: 5rem;
   background: $bg-color-container-card;
+
+  @include smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    margin: 0;
+  }
 }
 
 .card__container-img{
   height: 40vh;
   background-color:  rgba(0, 0, 0, 0.116);
   width: 100%;
+
+
 
 
 
@@ -34,6 +53,10 @@ margin-top: 0;
   text-align: center;
   text-shadow: 2px 2px 2px black;
   text-transform: uppercase;
+
+  @include smartphone{
+    font-size: 1.6rem;
+  }
 
 }
 
@@ -53,6 +76,13 @@ margin-top: 0;
   display: flex;
   flex-direction: column;
 
+  @include smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
 }
 
 .card__container-content img{
@@ -65,6 +95,11 @@ margin-top: 0;
   opacity: 1;
   background-size: cover;
 
+  @include smartphone{
+    width: 200px;
+    height: 200px;
+    margin: -18rem auto 0;
+  }
 
 }
 
@@ -74,11 +109,27 @@ margin-top: 0;
   flex-wrap: wrap;
   justify-content: space-around;
 
+  @include smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
 }
 
 .card__container-content__infomacao{
   width: 40%;
   margin-bottom: 2rem;
+
+  @include smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
 }
 
 .card__container-content__infomacao h1{
@@ -108,6 +159,14 @@ margin-top: 0;
 .container-contato{
   margin: 3rem 8%;
   //background-color: $bg-color;
+  @include smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    margin: 3rem auto;
+  }
 
 }
 
@@ -137,6 +196,13 @@ margin-top: 0;
   display: flex;
   gap: 1rem;
   padding: 1rem;
+
+  @include smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 .formulario{
@@ -151,6 +217,16 @@ margin-top: 0;
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
+
+  @include smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+
+    margin: auto;
+  }
 
 }
 
@@ -228,6 +304,10 @@ textarea{
   opacity: 0.8;
   flex-grow: 1;
   outline: none;
+
+  @include smartphone{
+
+  }
 }
 textarea:hover{
   transition: 0.3;
