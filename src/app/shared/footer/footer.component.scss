@@ -6,12 +6,28 @@
   color: $text-color;
   background-color: rgba(0,0,0,0.8);
 
+  @include smartphone{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
 }
 
 .container-logo {
   padding-left: 3rem;
   padding-top: 2rem;
   width: 33%;
+
+  @include smartphone{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    display: flex;
+    margin: auto;
+
+    padding: 0;
+  }
 }
 
 .logo{
@@ -36,6 +52,13 @@ margin: auto;
   width: 34%;
   padding-top: 2rem;
 
+  @include smartphone{
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+    margin: auto;
+  }
+
 }
 
 .link{
@@ -52,6 +75,16 @@ margin: auto;
 .container-rede-sociais{
   width: 33%;
   padding-top: 2rem;
+
+  @include smartphone{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+  }
 
 }
 
@@ -102,4 +135,8 @@ margin: auto;
   font-size: 0.7rem;
   color: $text-color;
   background-color: rgba(0,0,0,0.9);
+
+  @include smartphone{
+    padding-top: 3rem;
+  }
 }

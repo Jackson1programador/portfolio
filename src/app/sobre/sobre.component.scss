@@ -40,6 +40,10 @@ body {
   background-color:  rgba(0, 0, 0, 0.116);
   width: 100%;
 
+  @include smartphone{
+    background-color: initial;
+    height: auto;
+  }
 
 
 
@@ -98,7 +102,7 @@ body {
   @include smartphone{
     width: 200px;
     height: 200px;
-    margin: -18rem auto 0;
+    margin: 2rem auto 0;
   }
 
 }
@@ -144,6 +148,10 @@ body {
   text-shadow: 4px 4px black;
   text-transform: uppercase;
 
+  @include smartphone{
+    font-size: 1.4rem;
+  }
+
 }
 
 .card__container-content__infomacao p{
@@ -166,6 +174,7 @@ body {
     align-content: center;
 
     margin: 3rem auto;
+    width: 100%;
   }
 
 }
@@ -178,6 +187,12 @@ body {
   text-shadow: 4px 4px black;
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  @include smartphone{
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+  }
 
 
 }
@@ -355,6 +370,12 @@ button:hover{
   border-radius: 1rem;
   min-width: 350px;
   min-height: 350px;
+
+  @include smartphone{
+    width: initial;
+    min-width: 300px;
+    min-height: 300px;
+  }
 }
 .contato-card__card{
   width: 45%;
