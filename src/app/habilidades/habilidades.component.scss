@@ -23,6 +23,8 @@
   box-shadow: 0 0 2rem $border-card;
 
 
+
+
 }
 
 .descricao{
@@ -43,6 +45,7 @@
 
   @include smartphone{
     justify-content: center;
+    margin: auto;
   }
 
 }

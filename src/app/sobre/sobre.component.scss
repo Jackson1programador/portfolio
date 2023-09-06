@@ -411,6 +411,12 @@ button:hover{
   font-size: 1.2rem;
   margin: auto;
   text-shadow: 2px 2px black;
+
+  @include smartphone{
+    font-size: 1rem;
+    padding: 2px;
+  }
+
 }
 
 .contato-card__card__titulo{
@@ -420,6 +426,8 @@ button:hover{
   background-color: #000000bb;
   transform: translateY(100%);
   transition: 0.3s;
+
+
 }
 
 .contato-card__card:hover .contato-card__card__titulo{
