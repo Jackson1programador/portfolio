@@ -21,10 +21,26 @@ body{
   margin: 2rem auto;
   border-radius: 2rem;
   overflow: auto;
+
+  @include smartphone{
+    min-width: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+  }
 }
 
 .card-cronograma{
   display: flex;
+
+  @include smartphone{
+    flex-direction: column;
+    height: 60vh;
+
+
+  }
 
 }
 
@@ -39,6 +55,16 @@ body{
 
   border-bottom: 2px dotted rgba(47, 3, 28, 0.822);
   min-height: 174px;
+
+  @include smartphone{
+    height: initial;
+    min-height: initial;
+    padding: 2rem 0;
+    width: 100%;
+    margin: auto;
+
+    border: initial;
+  }
 }
 
 
@@ -72,6 +98,14 @@ body{
   border-bottom: 2px dotted rgba(47, 3, 28, 0.822);
   min-height: 174px;
 
+  @include smartphone{
+    height: initial;
+    min-height: initial;
+    padding: 2rem 0;
+    width: 100%;
+    margin: auto;
+  }
+
 }
 .icon{
   width: 75px;
@@ -103,6 +137,17 @@ body{
   min-height: 174px;
   position: relative;
 
+  @include smartphone{
+    height: initial;
+    min-height: 230px;
+    padding: 2rem 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border: initial;
+    //box-sizing: border-box;
+  }
+
 }
 
 .carimbo-concluido{
@@ -110,6 +155,15 @@ body{
   position: absolute;
   right: 1rem;
   opacity: 0.5;
+
+  @include smartphone{
+    margin: auto;
+    right: initial;
+    width: 100%;
+
+
+
+  }
 }
 
 .container-content p{
@@ -123,6 +177,12 @@ body{
   padding-top: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
+
+  @include smartphone{
+    padding: 0;
+    margin: 1rem auto;
+
+  }
 }
 
 
