@@ -23,6 +23,21 @@
   }
 }
 
+mat-icon{
+  @include smartphone{
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+i{
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+
 .lista-link{
   @include smartphone{
     display: none;
@@ -36,6 +51,7 @@
 .icone{
   margin-left: 1rem;
   cursor: pointer;
+
 }
 .icone:hover{
   font-size: 1.3rem;
@@ -92,6 +108,7 @@
 
   @include smartphone{
     display: block;
+    z-index: 2;
   }
   @include tablet{
     display: block;
@@ -99,7 +116,7 @@
 }
 
 .container-list{
-  background: $text-color-navbar;
+  background: $gradient;
   margin-left: 0;
   width: 100%;
   position: absolute;
@@ -119,18 +136,24 @@
 }
 
 .navbar-text-menu{
-  color: rgba(221,36,118,1);
+  color: $text-color;
   margin-left: 16px;
+  font-size: 1.6rem;
+  font-weight: bolder;
 }
 
 .navbar-text-menu:hover{
-  color: $text-color;
+  color: $text-color-navbar;
   transition: 0.3s;
-  font-size: 1.3rem;
+
 }
 
 .icone-menu-ativo {
-  color: rgba(221,36,118,1);
+  color: $text-color;
+}
+
+.icone-menu-ativo:hover {
+  color: $text-color-navbar;
 }
 
 .icone-menu {
