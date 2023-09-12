@@ -299,18 +299,20 @@
 
 
 
-@keyframes imagemEscrolando{
-  from{
-    transform: translateX(0);
-  }
 
-  to{
-    transform: translateX(-750px);
-  }
-}
 
 .li-icon{
   @include smartphone{
+    @keyframes imagemEscrolando{
+      from{
+        transform: translateX(0);
+      }
+
+      to{
+        transform: translateX(-750px);
+      }
+    }
+
     animation-name: imagemEscrolando;
     animation-duration: 6s;
     animation-iteration-count: infinite;
