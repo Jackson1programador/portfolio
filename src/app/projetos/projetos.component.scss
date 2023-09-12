@@ -29,6 +29,7 @@ body{
 
     min-width: initial;
     padding: 0;
+    gap: 1rem;
   }
 
 
@@ -45,14 +46,13 @@ body{
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 2rem $border-card;
-  opacity: 0.8;
   height: 82vh;
 
   @include smartphone{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     box-sizing: border-box;
 
 
@@ -176,7 +176,7 @@ body{
   color: $text-color;
   font-size: 1.5rem;
   font-weight: bold;
-  opacity: 0.6;
+  opacity: 1;
 
   @include smartphone{
     font-size: 1.3rem;
@@ -185,7 +185,7 @@ body{
 
 .btn:hover{
   transition: 0.3s;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .container-tarja{

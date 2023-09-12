@@ -89,6 +89,7 @@
   font-size: 4rem;
   font-weight: 900;
 
+
   @include smartphone{
     font-size: 3rem;
   }
@@ -122,20 +123,14 @@
   margin-top: 2rem;
   margin-right: 5rem;
   padding: 0.3rem 3rem;
+  color: $roso;
+  border-color: $roso;
 
   @include smartphone{
     margin-right: 0;
   }
 }
 
-.efeito-text{
-
-}
-.efeito-text:hover{
-  transition: 0.3;
-  color: $roso;
-
-}
 
 .container-foto{
   width: 40vw;
@@ -326,6 +321,8 @@
 }
 
 .ul-icon:hover .li-icon{
+  @include smartphone{
     animation-play-state: paused;
+  }
 }
 
