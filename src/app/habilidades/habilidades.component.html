@@ -1,8 +1,8 @@
-<app-navbar></app-navbar>
+
 
 <!-- front-end -->
 <div class="container-habilidades">
-
+  <app-navbar  [ngClass]="{'navbar': navbarIsActive, 'navbarTop': !navbarIsActive,'slideInDown':navbarIsActive }"></app-navbar>
   <div class="container-barra-navegacao">
 
   </div>

@@ -1,6 +1,7 @@
-<app-navbar></app-navbar>
 
 <body>
+  <app-navbar  [ngClass]="{'navbar': navbarIsActive, 'navbarTop': !navbarIsActive,'slideInDown':navbarIsActive }"></app-navbar>
+
   <h1 class="title">Cronograma</h1>
   <section class="container-cronograma">
     <article class="card-cronograma">

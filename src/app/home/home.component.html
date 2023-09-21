@@ -1,6 +1,7 @@
-<app-navbar></app-navbar>
 
-<div class="container">
+
+<div class="container" >
+  <app-navbar  [ngClass]="{'navbar': navbarIsActive, 'navbarTop': !navbarIsActive,'slideInDown':navbarIsActive }"></app-navbar>
 
   <div class="container-home">
 
