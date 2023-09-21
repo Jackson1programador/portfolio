@@ -160,7 +160,10 @@ body{
   @include smartphone{
     margin: auto;
     right: initial;
-    width: 100%;
+    width: 200px;
+
+    right: -10px;
+    bottom: 15px;
 
 
 
