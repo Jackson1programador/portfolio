@@ -16,13 +16,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // setInterval( ()=>{
-    //   if(this.menu){
-    //     this.menu = false
-    //   } else{
-    //     this.menu = true
-    //   }
-    // },2000);
+
 
   }
 }

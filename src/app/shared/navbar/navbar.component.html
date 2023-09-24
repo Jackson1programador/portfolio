@@ -27,7 +27,7 @@
 
       </div>
 
-      <div class="container-list slideInLeft" [ngClass]="{'menu-inativo': menu, 'menu-ativo': !menu }">
+      <div class="container-list" [ngClass]="{'menu-inativo': menu, 'slideOutLeft': menu ,'slideInLeft': !menu,'menu-ativo': !menu }">
         <i  class="icone-menu-ativo icone navbar-text" (click)="menuOnOff()">
           <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
         </i>
