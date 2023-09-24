@@ -6,7 +6,7 @@
   @include smartphone{
     display: flex;
     flex-direction: column;
-    position: relative;
+    // position: absolute;
 
   }
 
@@ -362,6 +362,8 @@
 }
 
 .navbarTop{
+  position: relative;
+
 
   z-index: 5;
   width: 100%;

@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit{
 
       if(posicaoAtual > 50) {
         this.navbarIsActive = true
-      }else{
+      }if (posicaoAtual == 0 ){
         this.navbarIsActive = false
       }
 
