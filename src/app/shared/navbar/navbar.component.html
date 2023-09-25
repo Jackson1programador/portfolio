@@ -32,11 +32,11 @@
           <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
         </i>
         <ul>
-          <li class="navbar-li-menu" > <a class="navbar-text-menu" routerLink="" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Home</a> </li>
-          <li class="navbar-li-menu" > <a class="navbar-text-menu" routerLink="/sobre" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Sobre</a> </li>
-          <li class="navbar-li-menu"> <a class="navbar-text-menu" routerLink="/habilidade" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Habilidades</a> </li>
-          <li class="navbar-li-menu"> <a class="navbar-text-menu" routerLink="/projetos" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Projetos</a> </li>
-          <li class="navbar-li-menu"> <a class="navbar-text-menu" routerLink="/cronograma" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Cronograma</a> </li>
+          <li class="navbar-li-menu" > <a class="navbar-text-menu" (click)="menuOnOff()" routerLink="" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Home</a> </li>
+          <li class="navbar-li-menu" > <a class="navbar-text-menu" (click)="menuOnOff()" routerLink="/sobre" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Sobre</a> </li>
+          <li class="navbar-li-menu"> <a class="navbar-text-menu"  (click)="menuOnOff()" routerLink="/habilidade" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Habilidades</a> </li>
+          <li class="navbar-li-menu"> <a class="navbar-text-menu"  (click)="menuOnOff()" routerLink="/projetos" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Projetos</a> </li>
+          <li class="navbar-li-menu"> <a class="navbar-text-menu"   (click)="menuOnOff()"routerLink="/cronograma" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Cronograma</a> </li>
           <li class="navbar-li-menu" > <a class="navbar-text-menu" href="https://jackson1programador.github.io/portfolio/sobre/#contato">Contato</a> </li>
           <!-- <li class="navbar-li-menu" > <a class="navbar-text-menu" routerLink="/resumo" [routerLinkActive]="['ativa']" [routerLinkActiveOptions]="{exact: true}">Resumo</a> </li> -->
         </ul>
