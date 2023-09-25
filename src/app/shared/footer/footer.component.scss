@@ -137,8 +137,13 @@ margin: auto;
   font-size: 0.7rem;
   color: $text-color;
   background-color: rgba(0,0,0,0.9);
+  box-sizing: border-box;
 
   @include smartphone{
     padding-top: 3rem;
   }
+}
+
+.copyright{
+  box-sizing: border-box;
 }

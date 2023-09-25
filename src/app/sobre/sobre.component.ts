@@ -8,7 +8,7 @@ import { HostListener } from '@angular/core';
 })
 export class SobreComponent {
   public ultimaPosicaoDoScroll: number = 0;
-  public navbarIsActive: boolean = false;
+  public navbarIsActive: boolean = true;
 
 
   @HostListener('window:scroll', ['$event'])
@@ -19,13 +19,11 @@ export class SobreComponent {
 
       if(posicaoAtual > 50) {
         this.navbarIsActive = true
-      }else{
-        this.navbarIsActive = false
       }
 
     }else{
       this.navbarIsActive = false
-      console.log("desaparecer menu")
+
     }
     this.ultimaPosicaoDoScroll = posicaoAtual;
   }

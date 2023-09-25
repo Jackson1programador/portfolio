@@ -2,6 +2,7 @@
 
 body{
   background-color: $bg-color;
+  padding-top: 94px;
 }
 
 .title{
@@ -229,7 +230,8 @@ body{
 }
 
 .navbarTop{
-
+  position: relative;
+  top: 94px;
   z-index: 5;
   width: 100%;
 

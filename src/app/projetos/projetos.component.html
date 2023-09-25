@@ -1,7 +1,7 @@
 
-
+<app-navbar  [ngClass]="{'navbar': navbarIsActive, 'navbarTop': !navbarIsActive,'slideInDown':navbarIsActive }"></app-navbar>
 <body>
-  <app-navbar  [ngClass]="{'navbar': navbarIsActive, 'navbarTop': !navbarIsActive,'slideInDown':navbarIsActive }"></app-navbar>
+
   <h1 class="title">Meus Projetos</h1>
   <section class="container">
       <article class="container-projeto">

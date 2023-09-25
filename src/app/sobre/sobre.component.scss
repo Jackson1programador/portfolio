@@ -5,7 +5,7 @@ app-navbar{
 }
 body {
   background-color: $bg-color;
-  margin-top: 0;
+  padding-top: 94px;
 
   @include smartphone{
     display: flex;
@@ -462,7 +462,8 @@ button:hover{
 }
 
 .navbarTop{
-
+  position: relative;
+  top: 94px;
   z-index: 5;
   width: 100%;
 

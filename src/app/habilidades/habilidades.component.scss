@@ -3,6 +3,7 @@
 .container-habilidades{
   background-color: $bg-color;
   color: $text-color;
+  padding-top: 94px;
 }
 
 .container-barra-navegacao{
@@ -124,7 +125,8 @@
 }
 
 .navbarTop{
-
+  position: relative;
+  top: 94px;
   z-index: 5;
   width: 100%;
 

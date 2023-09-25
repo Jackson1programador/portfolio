@@ -2,15 +2,27 @@
 
 .container{
   background: $bg-color;
+  padding-top: 94px;
+  box-sizing: border-box;
+
 
   @include smartphone{
     display: flex;
     flex-direction: column;
     // position: absolute;
 
+
   }
 
 
+}
+
+app-navbar{
+  width: 100vw;
+  box-sizing: border-box;
+}
+app-footer{
+  box-sizing: border-box;
 }
 
 .container-home{
@@ -363,7 +375,7 @@
 
 .navbarTop{
   position: relative;
-
+  top: 94px;
 
   z-index: 5;
   width: 100%;

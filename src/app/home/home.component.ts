@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit{
 
 
   public ultimaPosicaoDoScroll: number = 0;
-  public navbarIsActive: boolean = false;
+  public navbarIsActive: boolean = true;
 
 
 
@@ -65,13 +65,11 @@ export class HomeComponent implements OnInit{
 
       if(posicaoAtual > 50) {
         this.navbarIsActive = true
-      }if (posicaoAtual == 0 ){
-        this.navbarIsActive = false
       }
 
     }else{
       this.navbarIsActive = false
-      console.log("desaparecer menu")
+
     }
     this.ultimaPosicaoDoScroll = posicaoAtual;
   }
