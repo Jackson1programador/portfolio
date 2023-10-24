@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit{
   public sobrenome: string = "Albuquerque";
 
   public funcaoTela: string = "";
-  public funcao: string = "Desenvolvedor Front-End";
+  public funcao: string = "Dev Full Stack";
 
 
   public ultimaPosicaoDoScroll: number = 0;
